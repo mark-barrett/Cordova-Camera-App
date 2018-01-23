@@ -16,7 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
 var app = {
+
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
@@ -27,8 +29,27 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-        this.receivedEvent('deviceready');
+        document.getElementById("cameraTakePicture").addEventListener ("click", cameraTakePicture); 
+        this.receivedEvent('deviceready'); 
     },
+
+    function cameraTakePicture() { 
+
+        alert("Hello Cunt");
+        navigator.camera.getPicture(onSuccess, onFail, {  
+            quality: 50, 
+            destinationType: Camera.DestinationType.DATA_URL 
+        });  
+       
+        function onSuccess(imageData) { 
+            var image = document.getElementById('myImage'); 
+            image.src = "data:image/jpeg;base64," + imageData; 
+        }  
+       
+        function onFail(message) { 
+            alert('Failed because: ' + message); 
+        } 
+    }
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {

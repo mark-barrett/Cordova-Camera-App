@@ -8,6 +8,10 @@
         "source": "/Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/res/drawable-port-hdpi/screen.png"
     },
     {
+        "merged": "/Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/build/intermediates/res/merged/debug/xml_provider_paths.xml.flat",
+        "source": "/Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/res/xml/provider_paths.xml"
+    },
+    {
         "merged": "/Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon.png.flat",
         "source": "/Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/res/mipmap-xxxhdpi/icon.png"
     },
