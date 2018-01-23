@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 23 10:59:41 EET 2018
+#Tue Jan 23 11:12:50 EET 2018
 25.file=/Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/build/intermediates/assets/debug/www/plugins/cordova-plugin-camera/www/CameraPopoverOptions.js
 25.base=/Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/build/intermediates/assets/debug
 22.set=ANDROID_RESOURCE

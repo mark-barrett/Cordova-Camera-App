@@ -51,16 +51,34 @@
                     alert('Failed because: ' + message);
                 }
             }
+
+            function selectPicture(selection) {
+
+                var srcType = Camera.PictureSourceType.SAVEDPHOTOALBUM;
+                var options = setOptions(srcType);
+                var func = createNewFileEntry;
+
+                navigator.camera.getPicture(function cameraSuccess(imageUri) {
+
+                    // Do something
+
+                }, function cameraError(error) {
+                    console.debug("Unable to obtain picture: " + error, "app");
+
+                }, options);
+            }
         </script>
     </head>
     <body>
         <div class="text-center">
             <br/>
             <h2><span class="badge badge-success">Camera App</h2>
+                <p>By Mark Barrett</p>
             <div class="container">
                 <hr/>
-                <button id="cameraTakePicture" onClick="cameraTakePicture();">TAKE PICTURE</button>
+                <button id="cameraTakePicture" onClick="cameraTakePicture();" class="btn btn-success btn-block">Take Picture</button>
                 <br/>
+                <button id="selectPicture" onClick="selectPicture();" class="btn btn-success btn-block">Select Picture</button>
                 <img id="myImage" width="100%" class="image"></img>
             </div>
         </div>
