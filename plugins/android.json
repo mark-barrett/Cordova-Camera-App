@@ -8,10 +8,10 @@
   },
   "installed_plugins": {
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.markbarrettdesign.cameraapp"
+      "PACKAGE_NAME": "io.cordova.hellocordova"
     },
     "cordova-plugin-camera": {
-      "PACKAGE_NAME": "com.markbarrettdesign.cameraapp"
+      "PACKAGE_NAME": "io.cordova.hellocordova"
     }
   },
   "dependent_plugins": {}

@@ -21,7 +21,7 @@ INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Inte
 INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
 INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml:2:1-18:12
 	package
-		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml:2:102-143
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml:2:102-135
 		INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -31,7 +31,7 @@ INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Inte
 	android:hardwareAccelerated
 		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml:2:11-45
 	xmlns:android
-		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml:2:144-202
+		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml:2:136-194
 	android:versionCode
 		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml:2:46-73
 		INJECTED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml
@@ -66,7 +66,7 @@ MERGED from [com.android.support:support-v4:24.1.1] /private/var/root/.gradle/ca
 		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml:5:18-52
 	android:icon
 		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml:5:53-80
-activity#com.markbarrettdesign.cameraapp.MainActivity
+activity#io.cordova.hellocordova.MainActivity
 ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml:6:9-11:20
 	android:label
 		ADDED from /Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app/platforms/android/app/src/main/AndroidManifest.xml:6:97-134

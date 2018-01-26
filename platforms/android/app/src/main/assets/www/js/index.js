@@ -16,9 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-
 var app = {
-
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
@@ -29,27 +27,14 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-        document.getElementById("cameraTakePicture").addEventListener ("click", cameraTakePicture); 
-        this.receivedEvent('deviceready'); 
+        // Binding an Event Listener for the Take Picture button
+        document.getElementById('takePicture').addEventListener('click',takePicture, false);
+
+        // Binding an Event Listener for the Select Picture button
+        document.getElementById('selectPicture').addEventListener('click', selectPicture, false);
+
+        this.receivedEvent('deviceready');
     },
-
-    function cameraTakePicture() { 
-
-        alert("Hello Cunt");
-        navigator.camera.getPicture(onSuccess, onFail, {  
-            quality: 50, 
-            destinationType: Camera.DestinationType.DATA_URL 
-        });  
-       
-        function onSuccess(imageData) { 
-            var image = document.getElementById('myImage'); 
-            image.src = "data:image/jpeg;base64," + imageData; 
-        }  
-       
-        function onFail(message) { 
-            alert('Failed because: ' + message); 
-        } 
-    }
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -63,5 +48,52 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+function setOptions(srcType) {
+    var options = {
+        // Some common settings are 20, 50, and 100
+        quality: 50,
+        destinationType: Camera.DestinationType.FILE_URI,
+        // In this app, dynamically set the picture source, Camera or photo gallery
+        sourceType: srcType,
+        encodingType: Camera.EncodingType.JPEG,
+        mediaType: Camera.MediaType.PICTURE,
+        allowEdit: true,
+        correctOrientation: true  //Corrects Android orientation quirks
+    }
+    return options;
+}
+
+function takePicture() {
+    navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+                    destinationType: Camera.DestinationType.FILE_URI });
+
+    function onSuccess(imageURI) {
+        var image = document.getElementById('myImage');
+        image.src = imageURI;
+        image += "Your Image:"
+    }
+
+    function onFail(message) {
+        alert('Failed because: ' + message);
+    }
+}
+
+function selectPicture() {
+    var srcType = Camera.PictureSourceType.SAVEDPHOTOALBUM;
+    var options = setOptions(srcType);
+
+    navigator.camera.getPicture(function cameraSuccess(imageUri) {
+
+        // Display the image
+        var image = document.getElementById('myImage');
+        image.src = imageURI;
+        image += "Your Image:"
+
+    }, function cameraError(error) {
+        console.debug("Unable to obtain picture: " + error, "app");
+
+    }, options);
+}
 
 app.initialize();

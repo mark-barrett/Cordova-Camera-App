@@ -10,7 +10,7 @@
         "spec": "4.0.1",
         "type": "version"
       },
-      "/Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app"
+      "/Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera"
     ]
   ],
   "_from": "cordova-plugin-camera@4.0.1",
@@ -45,7 +45,7 @@
   "_shasum": "018c20d6fc4f194576b6548f3f67133dfe62c7fd",
   "_shrinkwrap": null,
   "_spec": "cordova-plugin-camera@4.0.1",
-  "_where": "/Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera-app",
+  "_where": "/Users/markbarrett/Documents/College/Year 3/Semester 2/Mobile Internet Programming/camera",
   "author": {
     "name": "Apache Software Foundation"
   },
