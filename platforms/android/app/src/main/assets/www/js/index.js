@@ -49,6 +49,11 @@ var app = {
     }
 };
 
+function displayImage(imgUri) {
+    var elem = document.getElementById('myImage');
+    elem.src = imgUri;
+}
+
 function setOptions(srcType) {
     var options = {
         // Some common settings are 20, 50, and 100
@@ -68,10 +73,8 @@ function takePicture() {
     navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
                     destinationType: Camera.DestinationType.FILE_URI });
 
-    function onSuccess(imageURI) {
-        var image = document.getElementById('myImage');
-        image.src = imageURI;
-        image += "Your Image:"
+    function onSuccess(imageUri) {
+        displayImage(imageUri);
     }
 
     function onFail(message) {
@@ -85,10 +88,7 @@ function selectPicture() {
 
     navigator.camera.getPicture(function cameraSuccess(imageUri) {
 
-        // Display the image
-        var image = document.getElementById('myImage');
-        image.src = imageURI;
-        image += "Your Image:"
+        displayImage(imageUri);
 
     }, function cameraError(error) {
         console.debug("Unable to obtain picture: " + error, "app");
